@@ -67,18 +67,18 @@ p {
 
 /* Form Styles */
 
-legend {
+h2 {
 	font-size: 20px;
 	color: #14151F;
 	font-weight: 700;
 	margin: 0 ;
-	padding-bottom: 10px;
+	padding-bottom: 17px;
 }
 
 fieldset {
     border: 0;
 	margin: 0;
-	padding: 14px;
+	padding: 0 15px 0 15px;
 }
 
 label {
@@ -87,6 +87,8 @@ label {
 	font-size: 15px;
 	margin: 0;	
 	color: #14151F;
+	display: inline-block;
+	margin-bottom: 10px;
 }
 
 .contactInfo input {
@@ -98,12 +100,24 @@ label {
 	font-weight: 700;
 	border: 0;
 	margin-bottom: 20px;
-	margin-top: 10px;
-	padding: 0 10px;
+	padding: 0 20px;
 }
 
 .contactInfo input:focus, textarea:focus {
 	border: 3px solid #03A9F4;
+}
+
+textarea {
+	min-height: 100px;
+	height: auto;
+	background: #14151F;
+	border-radius: 5px;
+	width: 100%;
+	color: #FFF;
+	font-weight: 700;
+	border: 0;
+	margin-bottom: 20px;
+	padding: 20px 10px;
 }
 
 select {
@@ -115,7 +129,7 @@ select {
 	margin-bottom: 20px;
 	color: #FFF;	
 	font-weight: 700;
-	padding: 0 10px;
+	padding: 0 20px;
 }
 
 option {
@@ -124,6 +138,32 @@ option {
 	background: #14151F;	
 }
 
+/* Button Styles */
+
+button {
+	height: 60px;
+	background: #03A9F4; 
+	border-radius: 5px;
+	width: 100%;
+	color: #FFF;
+	font-weight: 700;
+	border: 0;
+	margin: 10px 0 20px 0;
+	padding: 0 10px;	
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #FFF;
+  border: solid 3px #03A9F4;
+  color: #03A9F4;
+  transition: 0.3s;
+}
+
+::placeholder {
+  color: #525252;
+  text-align: right;
+}
 
 /* Main Styles */
 
@@ -135,5 +175,46 @@ main {
 	width: 90%;
 	border-bottom: 5px solid #14151F;	
 	margin: 0 auto;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
+	margin-top: 15px;
 } 
+
+/* Media Queries */
+
+@media (min-width:768px) {
+	
+	fieldset {
+		margin: 0 auto;
+		width: 50%;
+	}	
+	
+	.headerSection hr {
+	width: 48%;
+	border-bottom: 5px solid #14151F;	
+	margin: 0 auto;
+} 
+	
+	 hr {
+	width: 48%;
+	border-bottom: 5px solid #14151F;	
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 15px;
+} 
+	
+	.contactInfo input {
+	display: inline-block;
+}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
