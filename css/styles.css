@@ -39,10 +39,14 @@ header p {
 }
 
 .headerSection hr {
-	width: 90%;
+	width: 94%;
 	border-bottom: 5px solid #14151F;	
 	margin: 0 auto;
 } 
+
+.hrDiv {
+	margin: 0 auto;
+}
 
 .headerSection {
 	margin-bottom: 25px;
@@ -77,8 +81,8 @@ h2 {
 
 fieldset {
     border: 0;
-	margin: 0;
 	padding: 0 15px 0 15px;
+	margin: 0 auto;
 }
 
 label {
@@ -101,10 +105,12 @@ label {
 	border: 0;
 	margin-bottom: 20px;
 	padding: 0 20px;
+	display: inline-block;
 }
 
 .contactInfo input:focus, textarea:focus {
 	border: 3px solid #03A9F4;
+	transition: 0.2s;
 }
 
 textarea {
@@ -136,6 +142,16 @@ option {
 	color: #FFF;
 	font-weight: 700;	
 	background: #14151F;	
+}
+
+
+input[type="checkbox"]:checked + label, 
+input[type="radio"]:checked + label  {
+	font-weight: 700;
+}
+
+label[for*="javaNews"] {
+	margin-bottom: 20px;
 }
 
 /* Button Styles */
@@ -172,16 +188,51 @@ main {
 }
 
  hr {
-	width: 90%;
+	width: 94%;
 	border-bottom: 5px solid #14151F;	
 	margin: 0 auto;
 	margin-bottom: 30px;
 	margin-top: 15px;
 } 
 
+footer {
+	height: 130px;
+}
+
 /* Media Queries */
 
-@media (min-width:768px) {
+@media (min-width: 768px) and (max-width: 854px) {
+	
+	fieldset {
+		width: 64%;
+	}
+	
+	.headerSection hr {
+		width: 59%;
+	}
+	
+	hr {
+		width: 59%;
+	}
+	
+	.contactInfo input {
+		width: 79%;
+
+}	
+	
+	.contactInfo label {
+		width: 20%;
+ 		text-align: left;
+	}
+	
+	select {
+		width: 79%;
+	}	
+	
+}
+
+
+@media (min-width:854px) {
 	
 	fieldset {
 		margin: 0 auto;
@@ -189,13 +240,13 @@ main {
 	}	
 	
 	.headerSection hr {
-	width: 48%;
+	width: 49%;
 	border-bottom: 5px solid #14151F;	
 	margin: 0 auto;
 } 
 	
 	 hr {
-	width: 48%;
+	width: 49%;
 	border-bottom: 5px solid #14151F;	
 	margin: 0 auto;
 	margin-bottom: 30px;
@@ -203,8 +254,22 @@ main {
 } 
 	
 	.contactInfo input {
-	display: inline-block;
+		width: 79%;
+
 }
+	
+	.contactInfo label {
+		width: 20%;
+ 		text-align: left;
+	}
+	
+	select {
+		width: 79%;
+	}
+	
+	.contactInfo fieldset {
+		padding: 0 4px 0 15px;
+	}
 	
 	
 	
