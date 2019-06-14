@@ -159,6 +159,14 @@ label[for*="javaNews"] {
 	margin-bottom: 20px;
 }
 
+legend {
+	font-size: 20px;
+	color: #14151F;
+	font-weight: 700;
+	margin: 0 ;
+	padding-bottom: 17px;
+}
+
 /* Button Styles */
 
 button {
@@ -206,7 +214,7 @@ footer {
 
 /* Media Queries */
 
-@media (min-width: 768px) and (max-width: 854px) {
+@media (min-width: 768px) {
 	
 	fieldset {
 		width: 64%;
